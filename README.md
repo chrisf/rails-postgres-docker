@@ -10,5 +10,14 @@ This is the skeleton to create a rails app with a postgresql server for CIS4339
 Initial setup:
 `docker-compose build`
 
-To run:
+To run the dev server:
 `docker-compose up`
+
+Create the database:
+`docker-compose exec web bundle exec rails db:create`
+
+Run migrations
+
+To run any arbitrary command on the container
+
+`docker-compose exec web [command]`
