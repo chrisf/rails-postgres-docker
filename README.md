@@ -14,9 +14,7 @@ To run the dev server:
 `docker-compose up`
 
 Create the database:
-`docker-compose exec web bundle exec rails db:create`
-
-Run migrations
+`docker-compose exec web bundle exec rails db:create db:migrate`
 
 To run any arbitrary command on the container
 
